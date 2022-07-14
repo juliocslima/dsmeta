@@ -1,4 +1,4 @@
-package com.devsuperior.dsmeta;
+package com.devsuperior.dsmeta.controllers;
 
 import com.devsuperior.dsmeta.entities.Sale;
 import com.devsuperior.dsmeta.services.SaleService;
