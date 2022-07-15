@@ -25,9 +25,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-SDS3 foi uma aplicação desenvolvida durante a semana Spring React, evento ministrado por Nélio Alves da [DevSuperior](https://devsuperior.com.br/). O objetivo do projeto é criar um interface de relatório de vendas por colaborador através de um dashboard.
+SDMeta foi uma aplicação desenvolvida durante a semana Spring React, evento ministrado por Nélio Alves da [DevSuperior](https://devsuperior.com.br/). O objetivo do projeto é criar um interface de relatório de vendas por colaborador através de um dashboard, nesta tela podemos através da integração com o [Twillio](https://www.twilio.com/) enviar mensagens SMS com dados de evento de vendas.
 
-Foram utilizadas duas plataformas para este projeto [Netlify](https://www.netlify.com/) para o frontend e [Heroku](https://www.heroku.com/) para o backend.
+Foram utilizadas três plataformas para este projeto [Netlify](https://www.netlify.com/) para o frontend, [Heroku](https://www.heroku.com/) para o backend e [Twillio](https://www.twilio.com/) como plataforma de envio de mensagens.
 
 ### Executando a API rest
 
