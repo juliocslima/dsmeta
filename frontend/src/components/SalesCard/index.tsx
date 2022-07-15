@@ -1,9 +1,14 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 import { NotificationButton } from '../NotificationButton';
 import './styles.css';
+
+interface Sale {
+
+}
 
 export function SalesCard() {
 
@@ -12,6 +17,13 @@ export function SalesCard() {
 
   const [minDate, setMinDate] = useState(min);
   const [maxDate, setMaxDate] = useState(max);
+
+  useEffect(() => {
+    axios.get('https://dsmeta-twillio.herokuapp.com/api/v1/sales/all')
+      .then(response => {
+        console.log(response.data);
+      });
+  }, []);
 
   return (
     <div className="dsmeta-card">
@@ -89,7 +101,6 @@ export function SalesCard() {
                     </td>
                   </tr>
                 </tbody>
-
               </table>
             </div>
           </div>
