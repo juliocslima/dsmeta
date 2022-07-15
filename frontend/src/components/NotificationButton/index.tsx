@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import Icon from '../../assets/images/notification-icon.svg';
 import { BASE_URL } from '../../utils/request';
 
@@ -12,7 +13,17 @@ export function NotificationButton({ saleId } : NotificationButtonProps) {
 
   function handleSendNotification(id: number) {
     axios.get(`${BASE_URL}/api/v1/sales/${id}/notification`)
-      .then(response => { console.log("mensagem enviada") });
+      .then(response => { 
+        toast.success('Mensagem enviada com sucesso', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+          });
+       });
   }
 
   return(
