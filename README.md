@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">
-  <img alt="SDS 4.0" title="Semana Spring React" src="https://github.com/juliocslima/sds3-project/blob/main/images/app-image.png" />
+  <img alt="SDS 4.0" title="Semana Spring React" src="https://github.com/juliocslima/dsmeta/blob/main/images/app-image.png" />
 </h1>
 
 ## ✨ Tecnologias
